@@ -23,7 +23,7 @@ import android.provider.BaseColumns;
  */
 public class MediaContract {
 
-    public static final String CONTENT_AUTHORITY = "org.xbmc.kore.provider";
+    public static final String CONTENT_AUTHORITY = "tv.dakai.remote.provider";
 
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 

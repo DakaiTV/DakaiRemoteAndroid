@@ -36,7 +36,7 @@
 
         <!-- Activities -->
         <activity
-            android:name=".ui.sections.remote.RemoteActivity"
+            android:name="org.xbmc.kore.ui.sections.remote.RemoteActivity"
             android:exported="true">
 
             <!-- Main intent filter to open this activity from the launcher -->
@@ -186,7 +186,7 @@
         <!-- Providers -->
         <provider
             android:name=".provider.MediaProvider"
-            android:authorities="org.xbmc.kore.provider"
+            android:authorities="tv.dakai.remote.provider"
             android:exported="false" />
 
         <!-- Services -->
