@@ -54,7 +54,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.hamcrest.Matchers.not;
+import static org.hamcrest.core.IsNot.not;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
@@ -265,7 +265,7 @@ public class SlideUpPanelTests extends AbstractTestClass<MusicActivity> {
     public void keepCollapsedOnRotate() {
         rotateDevice(getActivity());
 
-        waitForPanelState(BottomSheetBehavior.STATE_COLLAPSED;
+        waitForPanelState(BottomSheetBehavior.STATE_COLLAPSED);
     }
 
     /**

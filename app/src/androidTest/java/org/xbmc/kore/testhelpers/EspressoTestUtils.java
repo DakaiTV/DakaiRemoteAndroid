@@ -30,8 +30,6 @@ import androidx.test.espresso.ViewAction;
 import androidx.test.espresso.ViewInteraction;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 
-import com.sothree.slidinguppanel.SlidingUpPanelLayout;
-
 import org.hamcrest.Matcher;
 import org.xbmc.kore.R;
 import org.xbmc.kore.testhelpers.action.ViewActions;
@@ -56,9 +54,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.CoreMatchers.anything;
-import static org.hamcrest.Matchers.allOf;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.core.AllOf.allOf;
+import static org.hamcrest.core.StringContains.containsString;
+import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.xbmc.kore.testhelpers.action.ViewActions.clearFocus;
 
 public class EspressoTestUtils {
@@ -79,6 +77,7 @@ public class EspressoTestUtils {
      * @param name Name of the menu item in the overflow menu
      * @param resourceId Resource identifier of the menu item
      */
+    @SuppressWarnings("unchecked")
     public static void clickMenuItem(Activity activity, String name, int resourceId) {
         try {
             onView(withId(resourceId)).perform(click());

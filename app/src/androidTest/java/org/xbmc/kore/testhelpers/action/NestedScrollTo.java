@@ -44,6 +44,7 @@ public class NestedScrollTo implements ViewAction {
     private final static String TAG = LogUtils.makeLogTag(NestedScrollTo.class);
 
     @Override
+    @SuppressWarnings("unchecked")
     public Matcher<View> getConstraints() {
         return allOf(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE), ViewMatchers.isDescendantOfA(anyOf(
                 isAssignableFrom(NestedScrollView.class))));

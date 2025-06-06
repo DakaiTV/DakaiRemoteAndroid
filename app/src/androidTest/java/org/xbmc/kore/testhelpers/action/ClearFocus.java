@@ -24,7 +24,7 @@ import org.hamcrest.Matcher;
 
 import static androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.core.AllOf.allOf;
 
 public class ClearFocus implements ViewAction {
 
