@@ -49,7 +49,7 @@
 
         <!-- Auxiliary activity to handle "Play on Kodi" share intents -->
         <activity
-            android:name=".ShareOpenActivity"
+            android:name="org.xbmc.kore.ShareOpenActivity"
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
 
@@ -169,32 +169,32 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.sections.hosts.HostManagerActivity" />
-        <activity android:name=".ui.sections.hosts.AddHostActivity" />
-        <activity android:name=".ui.sections.hosts.EditHostActivity" />
-        <activity android:name=".ui.sections.video.MoviesActivity" />
-        <activity android:name=".ui.sections.video.TVShowsActivity" />
-        <activity android:name=".ui.sections.audio.MusicActivity" />
-        <activity android:name=".ui.sections.addon.AddonsActivity" />
-        <activity android:name=".ui.sections.settings.SettingsActivity" />
-        <activity android:name=".ui.sections.file.FileActivity" />
-        <activity android:name=".ui.sections.localfile.LocalFileActivity" />
-        <activity android:name=".ui.sections.video.PVRActivity" />
-        <activity android:name=".ui.sections.video.AllCastActivity" />
-        <activity android:name=".ui.sections.favourites.FavouritesActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.hosts.HostManagerActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.hosts.AddHostActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.hosts.EditHostActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.video.MoviesActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.video.TVShowsActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.audio.MusicActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.addon.AddonsActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.settings.SettingsActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.file.FileActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.localfile.LocalFileActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.video.PVRActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.video.AllCastActivity" />
+        <activity android:name="org.xbmc.kore.ui.sections.favourites.FavouritesActivity" />
 
         <!-- Providers -->
         <provider
-            android:name=".provider.MediaProvider"
+            android:name="org.xbmc.kore.provider.MediaProvider"
             android:authorities="tv.dakai.remote.provider"
             android:exported="false" />
 
         <!-- Services -->
         <service
-            android:name=".service.library.LibrarySyncService"
+            android:name="org.xbmc.kore.service.library.LibrarySyncService"
             android:exported="false" />
         <service
-            android:name=".service.MediaSessionService"
+            android:name="org.xbmc.kore.service.MediaSessionService"
             android:foregroundServiceType="mediaPlayback"
             android:exported="false">
             <intent-filter>

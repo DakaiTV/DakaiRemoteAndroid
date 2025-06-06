@@ -55,7 +55,7 @@
             android:layout_gravity="bottom|end"
             android:visibility="gone"
             android:contentDescription="@string/play"
-            app:layout_behavior=".ui.behaviors.HideOnVerticalScrollBehavior"
+            app:layout_behavior="org.xbmc.kore.ui.behaviors.HideOnVerticalScrollBehavior"
             app:layout_dodgeInsetEdges="bottom"
             app:fabSize="normal"
             app:useCompatPadding="true"
