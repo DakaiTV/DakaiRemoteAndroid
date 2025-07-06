@@ -8,11 +8,11 @@
   <img src="https://f-droid.org/badge/get-it-on.png" height="80"/>
 </a>
 
-# Kore - Kodi/XBMC remote for Android
+# DakaiRemote - Kore based Kodi/XBMC based DKMC remote for Android
 
-GitHub repository for the [Kore][1] Android app.
+GitHub repository for the [DakaiRemote][1] Android app.
 
-Kore is the official remote for [Kodi](http://kodi.tv/), and aims to be a simple and easy to use remote.
+DakaiRemote is Kore based as the official remote for [Kodi](http://kodi.tv/) based [DKMC](http://dakai.tv), and aims to be a simple and easy to use remote.
 
 
 ## Building
